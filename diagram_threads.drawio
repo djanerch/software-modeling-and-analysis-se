@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram name="Page-1" id="8XzzyBJse5Oa6HsDptVD">
+    <mxGraphModel dx="1871" dy="2431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TfKhH72qw_FHQJVDui-C-1" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="-220" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="XUAyrXKaZsclTdT7Hm3o-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TfKhH72qw_FHQJVDui-C-3" target="TfKhH72qw_FHQJVDui-C-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUAyrXKaZsclTdT7Hm3o-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TfKhH72qw_FHQJVDui-C-3" target="TfKhH72qw_FHQJVDui-C-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUAyrXKaZsclTdT7Hm3o-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TfKhH72qw_FHQJVDui-C-3" target="TfKhH72qw_FHQJVDui-C-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUAyrXKaZsclTdT7Hm3o-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="TfKhH72qw_FHQJVDui-C-3" target="TfKhH72qw_FHQJVDui-C-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TfKhH72qw_FHQJVDui-C-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;User&lt;/h1&gt;&lt;p&gt;Username VARCHAR(50)&lt;/p&gt;&lt;p&gt;Email VARCHAR(100)&lt;/p&gt;&lt;p&gt;PasswordHash VARCHAR(255)&lt;/p&gt;&lt;p&gt;FullName VARCHAR(100)&lt;/p&gt;&lt;p&gt;Bio VARCHAR(150)&lt;/p&gt;&lt;p&gt;ProfilePictureURL VARCHAR(255)&lt;/p&gt;&lt;p&gt;IsPrivate BOOLEAN&lt;/p&gt;&lt;p&gt;RegistrationDateDATETIME&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="-220" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="TfKhH72qw_FHQJVDui-C-4" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="10" y="170" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="XUAyrXKaZsclTdT7Hm3o-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TfKhH72qw_FHQJVDui-C-5" target="TfKhH72qw_FHQJVDui-C-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XUAyrXKaZsclTdT7Hm3o-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TfKhH72qw_FHQJVDui-C-5" target="TfKhH72qw_FHQJVDui-C-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TfKhH72qw_FHQJVDui-C-5" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Post&lt;/h1&gt;&lt;p&gt;&lt;b&gt;PostID&amp;nbsp;&lt;/b&gt;INT&lt;/p&gt;&lt;p&gt;AuthorUserID INT&lt;/p&gt;&lt;p&gt;ContentText VARCHAR(500)&lt;/p&gt;&lt;p&gt;AttachmentMediaID INT&lt;/p&gt;&lt;p&gt;CreationTimestamp DATETIME&lt;/p&gt;&lt;p&gt;LikeCount INT&lt;/p&gt;&lt;p&gt;ReplyCount INT&lt;/p&gt;&lt;p&gt;RepostCount INT&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="10" y="170" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="TfKhH72qw_FHQJVDui-C-6" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="560" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="TfKhH72qw_FHQJVDui-C-7" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Media&lt;/h1&gt;&lt;p&gt;&lt;b&gt;MediaID&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;INT&lt;/span&gt;&lt;/p&gt;&lt;p&gt;MediaType VARCHAR(10)&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;MediaURL VARCHAR(255)&lt;/p&gt;&lt;p&gt;UploadDate DATETIME&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="560" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="TfKhH72qw_FHQJVDui-C-8" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="170" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="TfKhH72qw_FHQJVDui-C-9" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Comment&lt;/h1&gt;&lt;p&gt;&lt;b&gt;ReplyID&amp;nbsp;&lt;/b&gt;INT&lt;/p&gt;&lt;p&gt;PostID INT&lt;/p&gt;&lt;p&gt;ReplyAuthorID INT&lt;/p&gt;&lt;p&gt;ParentReplyID INT&lt;/p&gt;&lt;p&gt;ReplyText VARCHAR(500)&lt;/p&gt;&lt;p&gt;CreationTimestamp DATETIME&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="170" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="TfKhH72qw_FHQJVDui-C-10" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="170" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="TfKhH72qw_FHQJVDui-C-11" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Like&lt;/h1&gt;&lt;p&gt;&lt;b&gt;LikeID&amp;nbsp;&lt;/b&gt;INT&lt;/p&gt;&lt;p&gt;UserID INT&lt;/p&gt;&lt;p&gt;PostID INT&lt;/p&gt;&lt;p&gt;Timestamp DATETIME&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="170" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="TfKhH72qw_FHQJVDui-C-12" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="-540" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="XUAyrXKaZsclTdT7Hm3o-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TfKhH72qw_FHQJVDui-C-13" target="TfKhH72qw_FHQJVDui-C-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="-235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TfKhH72qw_FHQJVDui-C-13" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Follow_Link&lt;/h1&gt;&lt;p&gt;&lt;b&gt;FollowerID&amp;nbsp;&lt;/b&gt;INT&lt;/p&gt;&lt;p&gt;&lt;b&gt;FollowingID&amp;nbsp;&lt;/b&gt;INT&lt;/p&gt;&lt;p&gt;FollowDate DATETIME&lt;/p&gt;&lt;p&gt;IsAccepted BOOLEAN&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="-540" width="180" height="290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
