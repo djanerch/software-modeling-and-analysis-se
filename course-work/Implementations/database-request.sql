@@ -200,3 +200,68 @@ VALUES
 (9, 12, '2024-07-06 18:16:00'),
 (10, 13, '2024-07-06 19:02:00'),
 (11, 8, '2024-07-06 13:50:00');
+
+
+---Stored Procedures
+
+CREATE PROCEDURE CreatePost(
+    IN pAuthorID INT,
+    IN pContent VARCHAR(500),
+    IN pMediaID INT
+)
+BEGIN
+    INSERT INTO Post (AuthorUserID, ContentText, AttachmentMediaID, CreationTimestamp)
+    VALUES (pAuthorID, pContent, pMediaID, NOW());
+END
+
+CREATE PROCEDURE LikePost(
+    IN pUserID INT,
+    IN pPostID INT
+)
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM Likes WHERE UserID = pUserID AND PostID = pPostID) THEN
+        INSERT INTO Likes (UserID, PostID, Timestamp)
+        VALUES (pUserID, pPostID, NOW());
+    END IF;
+END
+
+CREATE PROCEDURE FollowUser(
+    IN pFollower INT,
+    IN pFollowed INT
+)
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM Follow_Link 
+                   WHERE FollowerID = pFollower AND FollowingID = pFollowed) THEN
+        INSERT INTO Follow_Link (FollowerID, FollowingID, FollowDate, IsAccepted)
+        VALUES (pFollower, pFollowed, NOW(), TRUE);
+    END IF;
+END
+
+CREATE PROCEDURE GetUserFeed(IN pUserID INT)
+BEGIN
+    SELECT P.*
+    FROM Post P
+    JOIN Follow_Link F ON F.FollowingID = P.AuthorUserID
+    WHERE F.FollowerID = pUserID
+    ORDER BY P.CreationTimestamp DESC;
+END
+
+---Triggers
+
+CREATE TRIGGER trg_after_like_insert
+AFTER INSERT ON Likes
+FOR EACH ROW
+BEGIN
+    UPDATE Post
+    SET LikeCount = LikeCount + 1
+    WHERE PostID = NEW.PostID;
+END
+
+CREATE TRIGGER trg_after_like_delete
+AFTER DELETE ON Likes
+FOR EACH ROW
+BEGIN
+    UPDATE Post
+    SET LikeCount = LikeCount - 1
+    WHERE PostID = OLD.PostID;
+END
